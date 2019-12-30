@@ -1,0 +1,259 @@
+@import "../comm/variable";
+
+.nb-supports{
+  overflow-x: hidden;
+
+  #tab{
+    padding-top: 70px \9;
+    position: relative;
+    padding-top: 0.7rem;
+  }
+
+  .tab-header{
+    z-index: 2001;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color= @box-shadow-color-2, Direction=125, Strength=10) \9;
+    box-shadow: 0px 5px 15px 0px @box-shadow-color-4;
+    line-height:0;
+
+    ul{
+      padding: 0 10px \9;
+      padding: 0 1rem;
+      text-align: center;
+
+      li{
+        font-size: @font-size-px-1 \9;
+        height: 70px \9;
+        line-height: 70px \9;
+        padding: 0 10px \9;
+        margin-left: 184px \9;
+        font-size:@font-size-1;
+        display: inline-block;
+        height: 0.7rem;
+        line-height: 0.7rem;
+        padding: 0 0.1rem;
+        cursor: pointer;
+        margin-left: 1.84rem;
+
+        &:first-child{
+          margin-left: 0
+        }
+
+        &.active{
+          color: RGB(21,135,251);
+          border-bottom: 5px solid RGB(21,135,251);
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    min-height: 310px \9;
+    min-height: 3.1rem;
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}
+
+//---------------产品服务-开始---------------
+.nb-productService{
+  display: block;
+
+  .productService{
+    padding-bottom: calc(215px + 30 - 80) \9;
+    position: relative;
+    padding-bottom: calc(2.15rem + 0.3rem - 0.8rem);
+  }
+
+  .softwareDevelop{
+    padding: 80px 0 30px 0 \9;
+    padding: 0.8rem 0 0.3rem 0;
+
+  }
+
+  .operationalService{
+    padding-bottom: 30px \9;
+    padding-bottom: 0.3rem;
+  }
+
+  h1{
+    line-height: 85px \9;
+    padding-top: 10px \9;
+    color: @font-color-8;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.85rem;
+    padding-top: 0.1rem;
+  }
+
+  p{
+    font-size: @font-size-px-5 \9;
+    text-indent: 50px \9;
+    line-height: 30px \9;
+    padding-bottom: 15px \9;
+    font-size: @font-size-5;
+    text-indent: 0.4rem;
+    line-height: 0.3rem;
+    padding-bottom: 0.15rem;
+    letter-spacing: 1px;
+    color: @font-color-4;
+  }
+
+  h3{
+    line-height: 55px \9;
+    padding-left: 40px \9;
+    line-height: 0.55rem;
+    padding-left: 0.4rem;
+    color: @font-color-8;
+    position: relative;
+
+    img{
+      width: 24px \9;
+      height: 24px \9;
+      margin-top: -12px \9;
+      width: 0.24rem;
+      height: 0.24rem;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -.12rem;
+    }
+  }
+
+  .container{
+    bottom: -80px \9;
+    height: 215px \9;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color= @box-shadow-color-2, Direction=125, Strength=10) \9;
+    position: absolute;
+    bottom: -0.8rem;
+    height: 2.15rem;
+    background: @base-white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px @box-shadow-color-2;
+
+    span{
+      padding: 20px 40px\9;
+      display: inline-block;
+      width: 50%;
+      padding: 0.2rem 0.4rem;
+
+      vertical-align: top;
+
+      h3{
+        line-height: 40px \9;
+        line-height: 0.4rem;
+        padding: 0;
+      }
+
+      p{
+        text-indent: 0;
+        font-size: @font-size-px-6;
+      }
+    }
+  }
+
+
+}
+//---------------产品服务-结束---------------
+
+//---------------服务热线-开始---------------
+.nb-serviceHotline{
+  line-height: 35px \9;
+  padding: 75px 0 160px 0 \9;
+  font-size: @font-size-px-4;
+  display: none;
+  line-height: 0.35rem;
+  padding: 0.75rem 0 1.6rem 0;
+
+  p{
+    margin-bottom: 25px \9;
+    color: @font-color-8;
+    margin-bottom: 0.25rem;
+  }
+
+  ul{
+    li{
+      span{
+        margin-right: 15px \9;
+        margin-right: 0.15rem;
+        color: @font-color-4;
+      }
+    }
+  }
+}
+//---------------服务热线-结束---------------
+
+//---------------下载中心-开始---------------
+.nb-downloadCenter{
+  padding: 30px 0 \9;
+  display: none;
+  padding: 0.3rem 0;
+
+  ul{
+    width: 415px \9;
+    display: inline-block;
+    width: 4.15rem;
+
+    &.left{
+      float: left;
+    }
+
+    &.right{
+      float: right;
+    }
+
+    li{
+      line-height: 60px \9;
+      font-size: @font-size-px-5 \9;
+      cursor: pointer;
+      font-size: @font-size-5;
+      line-height: 0.6rem;
+      position: relative;
+      color:@font-color-8;
+
+      i{
+        width: 5px \9;
+        height: 5px \9;
+        border-radius: 5px \9;
+        display: inline-block;
+        width: 0.05rem;
+        height: 0.05rem;
+        border-radius: 0.05rem;
+        background: RGB(0,145,255);
+        vertical-align: middle;
+      }
+
+      a{
+        width: 80px \9;
+        line-height: 30px \9;
+        padding: 0 10px 0 10px \9;
+        margin-top: -15px \9;
+        display: inline-block;
+        background: RGB(0,145,255);
+        width: 0.8rem;
+        line-height: 0.3rem;
+        text-align: center;
+        color: @base-white;
+        border-radius: 4px;
+        padding: 0 0.1rem 0 0.1rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -.15rem;
+
+        img{
+          width: 18px \9;
+          height: 18px \9;
+          width: 0.18rem;
+          height: 0.18rem;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+//---------------下载中心-结束---------------

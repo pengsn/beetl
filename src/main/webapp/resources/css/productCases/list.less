@@ -1,0 +1,89 @@
+@import "../comm/variable";
+
+.nb-case-list{
+  overflow-x: hidden;
+  background: #E4EFFF;
+}
+
+/*应用案例--》更多页面中解决方案类型tab*/
+.fd-tab{
+  background: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+  .tab-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    ul{
+      overflow: hidden;
+      li{
+        width: 140px;
+        margin: 0 30px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-bottom: 2px solid transparent;
+        float: left;
+
+        font-size: 22px;
+        cursor: pointer;
+        a{
+          color: @black_color;
+        }
+
+        &.active{
+          border-bottom: 2px solid #4DA1F6;
+          a{
+            color: #4DA1F6;
+          }
+
+        }
+      }
+    }
+  }
+
+}
+/*内容主页面*/
+#main{
+  min-height: 710px;
+  .fd-context{
+    padding: 40px 0 10px 0 \9;
+    padding: 0.4rem 0 0.1rem 0;
+    ul{
+      margin: 0 -7px 0 7px \9;
+      margin: 0 -.07rem 0 .07rem;
+
+      li{
+        width: 315px \9;
+        margin: 7px \9;
+        margin-bottom: 30px \9;
+        display: inline-block;
+        width: 3.15rem;
+        margin: .07rem;
+        margin-bottom: 0.3rem;
+
+        a{
+          height: 195px \9;
+          border-radius: 10px \9;
+          display: block;
+          background: #fff;
+          border-radius: 0.1rem;
+          border: 1px solid transparent;
+          height: 1.95rem;
+          overflow: hidden;
+
+          img{
+            width: 100%;
+          }
+        }
+
+        h6{
+          line-height: 46px\9;
+          padding: 0 5px\9;
+          color: @font-color-4;
+          line-height: 0.46rem;
+          padding: 0 0.05rem;
+        }
+      }
+    }
+  }
+}

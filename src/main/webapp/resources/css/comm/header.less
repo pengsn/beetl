@@ -1,0 +1,146 @@
+@import "./../comm/reset";
+@import "variable.less";
+/* -----头部菜单导航----- */
+
+@nav-height:0.7rem;
+
+.nb-header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index:9999;
+  .nav-box{
+    height: 70px\9;
+    background:rgb(0,57,120)\9;
+    filter: alpha(opacity=50)\9;
+    background:rgba(0,57,120,0.2);
+    width: 100%;
+    height: @nav-height;
+
+    .center-box{
+      //overflow: hidden;
+
+      a{
+        display: inline-block;
+
+        img{
+          width: 180px\9;
+          margin-top: -25px;
+          position: absolute;
+          top: 50%;
+          width: 1.8rem;
+          //height: 0.50rem;
+        }
+      }
+
+      .nav-link{
+        float: right;
+
+        .nav-link-ul{
+          line-height: 70px\9;
+          margin-right: -40px \9;
+          line-height: @nav-height;
+          margin-right: -.4rem;
+
+          li{
+            width: 165px \9;
+            *float: left;
+            display: inline-block;
+            cursor: pointer;
+            //margin-left: 100px;
+            width: 1.65rem;
+
+            //&:first-child{
+            //  margin-left: 50px;
+            //}
+
+            a{
+              font-size: 18px\9;
+              color: @color_write;
+              font-size: @font-size-5;
+              text-align: center;
+              display: block;
+            }
+
+            .dropdown-level1-content{
+              background:rgb(0,0,0)\9;
+              filter: alpha(opacity=40)\9;
+              width: 165px \9;
+              display: none;
+              position: absolute;
+              background:rgba(0,0,0,0.4);
+              width: 1.65rem;
+
+              .dropdown-level2{
+                position: relative;
+
+                .dropdown-level2-content{
+                  background:rgb(0,0,0)\9;
+                  filter: alpha(opacity=40)\9;
+                  width: 165px \9;
+                  left: 165px \9;
+                  display: none;
+                  position: absolute;
+                  left: 1.65rem;
+                  top: 0;
+                  background:rgba(0,0,0,0.4);
+                  width: 1.65rem;
+
+                  .dropdown-level3{
+                    &:hover{
+                      background:#2273BC;
+                    }
+                  }
+                }
+
+                &:hover{
+                  background:#2273BC;
+                }
+
+                &:hover .dropdown-level2-content{
+                  display: block;
+                }
+              }
+            }
+
+            &:hover{
+              background:rgb(0,0,0)\9;
+              filter: alpha(opacity=40)\9;
+              background:rgba(0,0,0,0.4);
+            }
+
+            &:hover .dropdown-level1-content{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* -----面包屑导航----- */
+.bread{
+  margin-top: @top-height-px !important;
+  left: 19.5% !important;
+  margin-top: @top_height !important;
+  ul{
+    overflow: hidden;
+  }
+}
+.bread ul li{
+  height: 60px\9;
+  line-height: 60px\9;
+  font-size: @font-size-px-6;
+  color:  @font-color-8 !important;
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+.bread ul li a{
+  margin-right: 5px\9;
+  font-size: @font-size-6 !important;
+  color:  @font-color-8 !important;
+  text-decoration: none !important;
+  margin-right: .05rem;
+}

@@ -1,0 +1,103 @@
+@import "../comm/variable";
+.nb-new-list{
+  overflow-x: hidden;
+}
+
+#main{
+  padding-top: 80px \9;
+  min-height: 710px;
+  line-height:0;
+  position: relative;
+  padding-top: 0.8rem;
+}
+
+.ul-head{
+  border-bottom: 2px solid #77beff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 5px 15px 0 @box-shadow-color-2;
+  text-align:center;
+  li{
+    height: 70px \9;
+    line-height: 70px \9;
+    font-size: @font-size-px-1 \9;
+    margin-left: 260px \9;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    font-size: @font-size-1;
+    color: @font-color-4;
+    display:inline-block;
+    margin-left: 2.6rem;
+
+    &:first-child{
+      margin-left: 0;
+    }
+
+    .div-year{
+      color: #535353;
+    }
+
+    .div-color{
+      color: #499cfc;
+    }
+
+    .div-bor{
+      display: block;
+      height: 4px;
+      background: linear-gradient(#19b8d5, #19b8d5);
+    }
+  }
+}
+
+.list-div{
+  height: 50px \9;
+  line-height: 50px \9;
+  height: 0.5rem;
+  line-height: 0.5rem;
+
+  &:hover{
+    opacity: 0.7;
+  }
+
+  h5 {
+    max-width: 770px \9;
+    float:left;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 7.7rem;
+
+    i{
+      width: 5px \9;
+      height: 5px \9;
+      border-radius: 5px \9;
+      margin-right: 10px \9;
+      display: inline-block;
+      vertical-align: middle;
+      width: 0.05rem;
+      height: 0.05rem;
+      border-radius: 0.05rem;
+      margin-right: 0.1rem;
+      background: RGB(30,136,245);
+    }
+
+    a{
+      color: @font-color-8;
+    }
+  }
+
+  .div-date{
+    font-size: @font-size-5;
+    color: @font-color-4;
+    float:right;
+  }
+}
+
+.heihei{
+  padding: 25px 0 \9;
+  padding: 0.25rem 0;
+  display: none;
+  &.active{
+    display: block;
+  }
+}

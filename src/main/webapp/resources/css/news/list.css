@@ -1,0 +1,129 @@
+@media screen and (min-width: 1680px) {
+  html {
+    font-size: 22px;
+  }
+  .test {
+    color: red;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1680px) {
+  html {
+    font-size: 20px;
+  }
+  .test {
+    color: black;
+  }
+}
+@media screen and (min-width: 1366px) and (max-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+  .test {
+    color: yellow;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+  html {
+    font-size: 16px;
+  }
+  .test {
+    color: green;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .test {
+    color: blue;
+  }
+}
+.nb-new-list {
+  overflow-x: hidden;
+}
+#main {
+  padding-top: 80px \9;
+  min-height: 710px;
+  line-height: 0;
+  position: relative;
+  padding-top: 0.8rem;
+}
+.ul-head {
+  border-bottom: 2px solid #77beff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 5px 15px 0 #e4f2ff;
+  text-align: center;
+}
+.ul-head li {
+  height: 70px \9;
+  line-height: 70px \9;
+  font-size: 26px \9;
+  margin-left: 260px \9;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  font-size: 0.26rem;
+  color: #999999;
+  display: inline-block;
+  margin-left: 2.6rem;
+}
+.ul-head li:first-child {
+  margin-left: 0;
+}
+.ul-head li .div-year {
+  color: #535353;
+}
+.ul-head li .div-color {
+  color: #499cfc;
+}
+.ul-head li .div-bor {
+  display: block;
+  height: 4px;
+  background: linear-gradient(#19b8d5, #19b8d5);
+}
+.list-div {
+  height: 50px \9;
+  line-height: 50px \9;
+  height: 0.5rem;
+  line-height: 0.5rem;
+}
+.list-div:hover {
+  opacity: 0.7;
+}
+.list-div h5 {
+  max-width: 770px \9;
+  float: left;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 7.7rem;
+}
+.list-div h5 i {
+  width: 5px \9;
+  height: 5px \9;
+  border-radius: 5px \9;
+  margin-right: 10px \9;
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.05rem;
+  height: 0.05rem;
+  border-radius: 0.05rem;
+  margin-right: 0.1rem;
+  background: #1e88f5;
+}
+.list-div h5 a {
+  color: #333333;
+}
+.list-div .div-date {
+  font-size: 0.18rem;
+  color: #999999;
+  float: right;
+}
+.heihei {
+  padding: 25px 0 \9;
+  padding: 0.25rem 0;
+  display: none;
+}
+.heihei.active {
+  display: block;
+}

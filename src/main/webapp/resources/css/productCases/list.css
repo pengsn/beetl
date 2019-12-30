@@ -1,0 +1,118 @@
+@media screen and (min-width: 1680px) {
+  html {
+    font-size: 22px;
+  }
+  .test {
+    color: red;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1680px) {
+  html {
+    font-size: 20px;
+  }
+  .test {
+    color: black;
+  }
+}
+@media screen and (min-width: 1366px) and (max-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+  .test {
+    color: yellow;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+  html {
+    font-size: 16px;
+  }
+  .test {
+    color: green;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .test {
+    color: blue;
+  }
+}
+.nb-case-list {
+  overflow-x: hidden;
+  background: #E4EFFF;
+}
+/*应用案例--》更多页面中解决方案类型tab*/
+.fd-tab {
+  background: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.fd-tab .tab-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.fd-tab .tab-wrapper ul {
+  overflow: hidden;
+}
+.fd-tab .tab-wrapper ul li {
+  width: 140px;
+  margin: 0 30px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  float: left;
+  font-size: 22px;
+  cursor: pointer;
+}
+.fd-tab .tab-wrapper ul li a {
+  color: rgba(0, 0, 0, 0.6);
+}
+.fd-tab .tab-wrapper ul li.active {
+  border-bottom: 2px solid #4DA1F6;
+}
+.fd-tab .tab-wrapper ul li.active a {
+  color: #4DA1F6;
+}
+/*内容主页面*/
+#main {
+  min-height: 710px;
+}
+#main .fd-context {
+  padding: 40px 0 10px 0 \9;
+  padding: 0.4rem 0 0.1rem 0;
+}
+#main .fd-context ul {
+  margin: 0 -7px 0 7px \9;
+  margin: 0 -0.07rem 0 0.07rem;
+}
+#main .fd-context ul li {
+  width: 315px \9;
+  margin: 7px \9;
+  margin-bottom: 30px \9;
+  display: inline-block;
+  width: 3.15rem;
+  margin: 0.07rem;
+  margin-bottom: 0.3rem;
+}
+#main .fd-context ul li a {
+  height: 195px \9;
+  border-radius: 10px \9;
+  display: block;
+  background: #fff;
+  border-radius: 0.1rem;
+  border: 1px solid transparent;
+  height: 1.95rem;
+  overflow: hidden;
+}
+#main .fd-context ul li a img {
+  width: 100%;
+}
+#main .fd-context ul li h6 {
+  line-height: 46px\9;
+  padding: 0 5px\9;
+  color: #999999;
+  line-height: 0.46rem;
+  padding: 0 0.05rem;
+}

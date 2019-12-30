@@ -1,0 +1,159 @@
+@import "footer";
+@import "header";
+@import "../comm/variable";
+
+.area{
+  width: 10rem;
+  margin: 0 auto;
+}
+.clearfloat:after{  /*最简方式*/
+  content: '';
+  display: block;
+  clear: both;
+}
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+
+/*************************查看更多公用样式*************************/
+
+.more{
+  height: 80px \9;
+  line-height:  80px \9;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: @font-size-px-6;
+  color: #fff;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  cursor: pointer;
+  &.gray-color{
+    color: @font-color-4;
+
+  }
+}
+/*************************新闻动态，解决方案，应用案例二级页面导航样式*************************/
+.nav-pic{
+  width: 13.66rem;
+  height: 5rem;
+  position: relative;
+  img{
+    height: 100%;
+    width: 100%;
+  }
+  .title{
+    top: 210px \9;
+    text-align: center;
+    position: absolute;
+    top:2.1rem;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+
+    h3{
+      margin: 20px auto \9;
+      font-size: 65px \9;
+      letter-spacing: 15px \9;
+      text-indent: 15px \9;
+      margin: 0.20rem auto;
+      font-size: 0.65rem;
+      letter-spacing: 0.15rem;
+      text-indent: 0.15rem;
+      color: #fff;
+    }
+    p{
+      font-size: @font-size-px-4;
+      color: #fff;
+      letter-spacing: 1px;
+      text-indent: 1px;
+    }
+  }
+}
+
+//---------------字体大小-开始---------------
+h1{
+  font-size: @font-size-px-1 \9;
+  font-size: @font-size-1;
+  letter-spacing: 1px;
+}
+
+h2{
+  font-size: @font-size-px-2;
+  letter-spacing: 1px;
+}
+
+h3{
+  font-size: @font-size-px-3 \9;
+  font-size: @font-size-3;
+  letter-spacing: 1px;
+}
+
+h4{
+  font-size: @font-size-px-4;
+  letter-spacing: 1px;
+}
+
+h5{
+  font-size: @font-size-px-5 \9;
+  font-size: @font-size-5;
+  letter-spacing: 1px;
+}
+
+h6{
+  font-size: @font-size-px-6;
+  letter-spacing: 1px;
+}
+//---------------字体大小-结束---------------
+
+//---------------页面主体-开始---------------
+
+.main-content-blue{
+  background: @bg-blue;
+}
+
+.main-content-white{
+  background: url("/resources/images/resolve/bg-1.png");
+  background-color: @base-white;
+}
+
+.main-content-pureWhite{
+  background-color: @base-white;
+}
+
+.main-wrap-10rem{
+  width: 1000px\9;
+  width: 10rem;
+  margin: 0 auto;
+}
+//---------------页面主体-结束---------------
+
+
+//---------------公共样式-开始---------------
+
+//文字超出现视省略号
+.txt-overflow{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.txt-center{
+  text-align: center;
+}
+
+.txt-right{
+  text-align: right;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+//---------------公共样式-结束---------------
+

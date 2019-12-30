@@ -1,0 +1,439 @@
+@import "../comm/variable";
+
+@separatorLines-vertical-color:RGB(213,218,225);
+
+@keyframes flipping{
+  from{transform:rotateY(0);}
+  to{transform:rotateY(180deg);}
+}
+
+.active{
+  animation: flipping .6s ease-in;
+}
+
+.nb-aboutus{
+  overflow-x: hidden;
+  background: #E4EFFF;
+
+  #main{
+    line-height: 0;
+    background: #ffffff;
+    margin: 0 auto;
+
+    .wrap-title{
+      line-height: 120px \9;
+      text-align: center;
+      line-height: 1.2rem;
+    }
+
+    //公司介绍
+    #introduce{
+      height: 460px\9;
+      height: 4.6rem;
+      position: relative;
+
+      p{
+        padding-top: 80px \9;
+        line-height: 40px \9;
+        font-size: @font-size-px-4;
+        color: @font-color-8;
+        padding-top: 0.8rem;
+        line-height: 0.4rem;
+        text-indent: 4px;
+      }
+
+      ul{
+        padding: 10px 0 \9;
+        top: 350px \9;
+        padding: 0.1rem 0;
+        background: @base-white;
+        text-align: center;
+        position: absolute;
+        top: 3.5rem;
+        border-radius: 5px;
+        filter: progid:DXImageTransform.Microsoft.Shadow(color= @box-shadow-color-2, Direction=125, Strength=10) \9;
+        box-shadow: 0px 5px 20px 5px @box-shadow-color-2;
+
+        li{
+          width: 220px \9;
+          height: 175px \9;
+          margin-left: 10px \9;
+          width: 2.2rem;
+          height: 1.75rem;
+          display: inline-block;
+          cursor: pointer;
+          margin-left: .1rem;
+
+          &:first-child{
+            margin-left: 0;
+          }
+
+          h2{
+            line-height: 70px \9;
+            bottom: 20px \9;
+            position: absolute;
+            width: 100%;
+            line-height: 0.7rem;
+            bottom: 0.2rem;
+            z-index: 2001;
+          }
+
+          div[class^="reversal"]{
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            img {
+              position: absolute;
+            }
+          }
+
+          .reversal-1{
+            img{
+              top: 50px \9;
+              width: 60px \9;
+              height: 60px \9;
+              margin-left: -30px \9;
+              top: 0.4rem;
+              left: 50%;
+              margin-left: -.3rem;
+              width: 0.6rem;
+              height: 0.6rem;
+            }
+          }
+
+          .reversal-2{
+            display: none;
+
+            img{
+              width: 135px \9;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              width: 1.35rem;
+            }
+
+            .company{
+              width: 100%;
+            }
+
+            h1{
+              top: 60px \9;
+              position: absolute;
+              width: 100%;
+              top: 0.6rem;
+              font-size: 2.25em;
+              color: RGB(230,26,18);
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    //联系我们
+    #contactUs{
+      padding-top: 80px \9;
+      padding-top: 0.8rem;
+      text-align: center;
+
+      h5{
+        line-height: 40px \9;
+        line-height: 0.4rem;
+      }
+
+      span{
+        padding: 0 15px \9;
+        padding: 0 0.15rem;
+
+        &:not(:last-child){
+          border-right: 1px solid @separatorLines-vertical-color;
+        }
+
+      }
+
+      .card-box{
+        margin-top: 30px \9;
+        margin-right: 20px \9;
+        padding-top: 20px \9;
+        width: 310px \9;
+        height: 390px \9;
+        display: inline-block;
+        margin-top: 0.3rem;
+        margin-right: 0.2rem;
+        padding-top: 0.2rem;
+        width: 3.10rem;
+        height: 3.90rem;
+        background: RGB(238,246,255);
+        border-radius: 5px;
+        filter: progid:DXImageTransform.Microsoft.Shadow(color= @box-shadow-color-4, Direction=125, Strength=10) \9;
+        box-shadow: 0 5px 10px 0 @box-shadow-color-4;
+        text-align: center;
+
+        img{
+          margin: 40px \9;
+          width: 150px \9;
+          height: 150px \9;
+          margin: 0.4rem;
+          width: 1.50rem;
+          height: 1.5rem;
+        }
+        h3{
+          line-height: 40px \9;
+          line-height: 0.4rem;
+          color: rgba(51,51,51,1);
+        }
+        h6{
+          line-height: 40px \9;
+          line-height: 0.4rem;
+          color: rgba(51,51,51,0.8);
+        }
+      }
+
+      .center{
+      }
+    }
+
+    //咨询留言
+    #consult{
+
+      form{
+        padding: 0 55px \9;
+        padding: 0 0.55rem;
+        background: RGB(238,246,255);
+
+        h3{
+          line-height: 90px \9;
+          font-size: @font-size-px-3 \9;
+          line-height: 0.9rem;
+          font-size: 0.22rem;
+        }
+
+        .form-item-mr{
+          margin-right: 90px \9;
+          margin-right: 0.9rem;
+        }
+
+        span{
+          width: 385px \9;
+          height: 40px \9;
+          margin-bottom: 30px \9;
+          position: relative;
+          display: inline-block;
+          color: rgba(51,51,51,0.4);
+          width: 3.85rem;
+          height: 0.4rem;
+          margin-bottom: 0.3rem;
+
+          label{
+            line-height: 40px \9;
+            width: 80px \9;
+            font-size: @font-size-px-5 \9;
+            margin-right: 15px \9;
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            line-height: 0.4rem;
+            font-size: @font-size-5;
+            width: 0.80rem;
+            margin-right: 0.15rem;
+            text-align: right;
+          }
+
+          input,textarea,select{
+            width: 285px \9;
+            padding: 0 15px \9;
+            font-size: @font-size-5 \9;
+            line-height: 40px \9;
+            height: 40px \9;
+            position: absolute;
+            right: 0;
+            width: 2.85rem;
+            padding: 0 0.15rem;
+            font-size: 0.18rem;
+            border-radius: 2px;
+            color: rgba(51,51,51,1);
+            line-height: 0.4rem;
+            height: 0.4rem;
+            border: 1px solid rgba(51,51,51,0.2);
+          }
+
+          textarea{
+            resize:none;
+            overflow: auto;
+          }
+
+          //清除默认的select选择框样式
+          select{
+            padding-right: 0 \9;
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+            cursor: pointer;
+            //小箭头图片
+            //background: url("") no-repeat scroll right center transparent;
+          }
+
+          //清除ie的默认选择框样式清除，隐藏下拉箭头
+          select::-ms-expand { display: none; }
+
+          i{
+            font-size: @font-size-px-5 \9;
+            height: 36px \9;
+            margin-top: 18px \9;
+            position: absolute;
+            top: 50%;
+            right: 1px;
+            margin-top: -.18rem;
+            height: 0.36rem;
+            font-size: @font-size-5;
+            color: rgba(51,51,51,1);
+            font-style: normal;
+
+            img{
+              height: 100%;
+            }
+          }
+
+          a{
+            right: -60px \9;
+            line-height: 0.4rem;
+            position: absolute;
+            right: -0.6rem;
+          }
+        }
+
+        .form-item-large{
+        width: 100%;
+        input{
+          width: 790px \9;
+          width: 7.9rem;
+        }
+      }
+
+        .form-item-x-large{
+          height: 80px \9;
+          width: 100%;
+          height: 0.8rem;
+          textarea{
+            width: 790px \9;
+            height: 95px \9;
+            padding-top: 10px \9;
+            width: 7.9rem;
+            height: 0.95rem;
+            vertical-align: text-top;
+            padding-top: 0.10rem;
+          }
+        }
+
+        .bottom{
+          padding: 10px 0 40px 0 \9;
+          text-align: center;
+          padding: 0.10rem 0 0.4rem 0;
+          a{
+            font-size: @font-size-px-3 \9;
+            width: 115px \9;
+            line-height: 40px \9;
+            font-size: @font-size-px-3;
+            display: inline-block;
+            width: 1.15rem;
+            line-height: 0.40rem;
+            border-radius: 2px;
+            background: #1e88f5;
+            color: #ffffff;
+          }
+
+        }
+      }
+    }
+
+    //加入我们
+    #joinUs{
+      text-align: center;
+
+      .card-box{
+        width: 480px \9;
+        height: 180px \9;
+        border-radius: 5px;
+        width: 4.80rem;
+        height: 1.80rem;
+        background: RGB(238,246,255);
+        position: relative;
+
+        img{
+          left: 75px \9;
+          margin-top: -35px \9;
+          width: 70px \9;
+          height: 70px \9;
+          position: absolute;
+          top: 50%;
+          left: 0.75rem;
+          margin-top: -.35rem;
+          width: 0.70rem;
+          height: 0.70rem;
+        }
+
+        div{
+          width: 350px \9;
+          width: 3.5rem;
+          position: absolute;
+          right: 0;
+          display: inline-block;
+          line-height: 1;
+
+
+          h4{
+            margin: 60px 0 20px 0 \9;
+            font-size: @font-size-px-4;
+            margin: 0.60rem 0 0.20rem 0;
+            color: rgba(51,51,51,0.6);
+          }
+        }
+      }
+      .left{
+        float: left;
+      }
+      .right{
+        float: right;
+      }
+
+    }
+
+    //热门岗位
+    #hotPosition{
+      padding: 50px 0 70px 0 \9;
+      padding: 0.5rem 0 0.7rem 0;
+      ul{
+        li{
+          font-size: @font-size-px-5 \9;
+          line-height: 50px \9;
+          font-size: @font-size-5;
+          width: 33%;
+          display: inline-block;
+          line-height: 0.50rem;
+
+          i{
+            height: 10px \9;
+            width: 10px \9;
+            border-radius: 10px \9;
+            margin-right: 10px \9;
+            background: #0091ff;
+            display: inline-block;
+            vertical-align: middle;
+            height: 0.1rem;
+            width: 0.1rem;
+            border-radius: 0.1rem;
+            margin-right: 0.1rem;
+          }
+
+          a{
+            color: @font-color-8;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

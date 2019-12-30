@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "microsoft yahei" !important;
+  font-weight: 400;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px\9;
+  line-height: 1;
+  color: #333333;
+  font-size: 0.16rem;
+}
+li {
+  list-style: none;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+i {
+  font-style: normal;
+}
+img {
+  border: none;
+}
+@media screen and (min-width: 1680px) {
+  html {
+    font-size: 22px;
+  }
+  .test {
+    color: red;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1680px) {
+  html {
+    font-size: 20px;
+  }
+  .test {
+    color: black;
+  }
+}
+@media screen and (min-width: 1366px) and (max-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+  .test {
+    color: yellow;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+  html {
+    font-size: 16px;
+  }
+  .test {
+    color: green;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .test {
+    color: blue;
+  }
+}
+/* -----头部菜单导航----- */
+.nb-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.nb-header .nav-box {
+  height: 70px\9;
+  background: #003978 \9;
+  filter: alpha(opacity=50) \9;
+  background: rgba(0, 57, 120, 0.2);
+  width: 100%;
+  height: 0.7rem;
+}
+.nb-header .nav-box .center-box a {
+  display: inline-block;
+}
+.nb-header .nav-box .center-box a img {
+  width: 180px\9;
+  margin-top: -25px;
+  position: absolute;
+  top: 50%;
+  width: 1.8rem;
+}
+.nb-header .nav-box .center-box .nav-link {
+  float: right;
+}
+.nb-header .nav-box .center-box .nav-link .nav-link-ul {
+  line-height: 70px\9;
+  margin-right: -40px \9;
+  line-height: 0.7rem;
+  margin-right: -0.4rem;
+}
+.nb-header .nav-box .center-box .nav-link .nav-link-ul li {
+  width: 165px \9;
+  *float: left;
+  display: inline-block;
+  cursor: pointer;
+  width: 1.65rem;
+}
+.nb-header .nav-box .center-box .nav-link .nav-link-ul li a {
+  font-size: 18px\9;
+  color: #fff;
+  font-size: 0.18rem;
+  text-align: center;
+  display: block;
+}
+.nb-header .nav-box .center-box .nav-link .nav-link-ul li .dropdown-level1-content {
+  background: #000000 \9;
+  filter: alpha(opacity=40) \9;
+  width: 165px \9;
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 1.65rem;
+}
+.nb-header .nav-box .center-box .nav-link .nav-link-ul li .dropdown-level1-content .dropdown-level2 {
+  position: relative;
+}
+.nb-header .nav-box .center-box .nav-link .nav-link-ul li .dropdown-level1-content .dropdown-level2 .dropdown-level2-content {
+  background: #000000 \9;
+  filter: alpha(opacity=40) \9;
+  width: 165px \9;
+  left: 165px \9;
+  display: none;
+  position: absolute;
+  left: 1.65rem;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 1.65rem;
+}
+.nb-header .nav-box .center-box .nav-link .nav-link-ul li .dropdown-level1-content .dropdown-level2 .dropdown-level2-content .dropdown-level3:hover {
+  background: #2273BC;
+}
+.nb-header .nav-box .center-box .nav-link .nav-link-ul li .dropdown-level1-content .dropdown-level2:hover {
+  background: #2273BC;
+}
+.nb-header .nav-box .center-box .nav-link .nav-link-ul li .dropdown-level1-content .dropdown-level2:hover .dropdown-level2-content {
+  display: block;
+}
+.nb-header .nav-box .center-box .nav-link .nav-link-ul li:hover {
+  background: #000000 \9;
+  filter: alpha(opacity=40) \9;
+  background: rgba(0, 0, 0, 0.4);
+}
+.nb-header .nav-box .center-box .nav-link .nav-link-ul li:hover .dropdown-level1-content {
+  display: block;
+}
+/* -----面包屑导航----- */
+.bread {
+  margin-top: 70px \9 !important;
+  left: 19.5% !important;
+  margin-top: 0.7rem !important;
+}
+.bread ul {
+  overflow: hidden;
+}
+.bread ul li {
+  height: 60px\9;
+  line-height: 60px\9;
+  font-size: 1em;
+  color: #333333 !important;
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+.bread ul li a {
+  margin-right: 5px\9;
+  font-size: 0.16rem !important;
+  color: #333333 !important;
+  text-decoration: none !important;
+  margin-right: 0.05rem;
+}

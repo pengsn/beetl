@@ -1,0 +1,41 @@
+@import "../comm/variable";
+.pagination{
+  padding-bottom: 40px \9;
+  text-align: center;
+  padding-bottom: 0.4rem;
+
+  .page-item{
+    width: 35px \9;
+    height: 35px \9;
+    line-height: 35px \9;
+    font-size: @font-size-px-5 \9;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid @font-color-2;
+    width: 0.35rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    background: #fff;
+    font-size: @font-size-5;
+
+    a{
+      color: @font-color-6;
+    }
+
+
+    &.active{
+      background-color: RGB(24,144,255);
+      text-align: center;
+
+      a{
+        color : #fff;
+      }
+    }
+
+    &.prevPage,&.nextPage{
+      width: 65px \9 !important ;
+      width: 0.65rem !important;
+    }
+  }
+}

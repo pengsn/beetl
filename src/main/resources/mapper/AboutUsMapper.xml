@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nblh.protal.web.aboutUs.dao.IAboutUsDao">
+
+	<!--公司介绍-->
+	<select id="getCompanyProfile" resultType="java.util.Map">
+		select
+			company_profile as companyProfile,
+			address,
+			zip_code as zipCode,
+			tel_phone as telPhone,
+			fax,
+			sales_email as salesEmail,
+			service_phone as servicePhone,
+			cooperation_email as cooperationEmail
+		from tb_aboutus_config
+	</select>
+	<!--公司资质-->
+	<select id="getQualification" resultType="java.lang.String">
+		select
+			name
+		from tb_honorary
+		where type = '1' and status = '3'
+		order by sort
+	</select>
+	<!--公司荣誉-->
+	<select id="getCompanyHonor" resultType="java.lang.String">
+		select
+			name
+		from tb_honorary
+		where type = '2' and status = '3'
+		order by sort
+	</select>
+	<!--联系我们-->
+	<select id="getContactUs" resultType="java.util.Map">
+		select
+			name,
+			tel_phone as telPhone,
+			email
+		from tb_contact_us
+	</select>
+	<!--加入我们-->
+	<select id="getJoinUs" resultType="java.util.Map">
+		select
+			id,
+			position
+		from tb_recruitment
+		where status = '3'
+	</select>
+
+</mapper>

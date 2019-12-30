@@ -1,0 +1,130 @@
+@text_font_size_xs:14px;
+@text_font_size_sm:16px;
+@text_font_size:18px;
+@text_font_size_md:20px;
+@text_font_size_lg:22px;
+
+@title_font_size_xs:28px;
+@title_font_size_sm:30px;
+@title_font_size:32px;
+
+@text_color_dark:rgba(255,255,255,1);
+@text_color:rgba(255,255,255,.8);
+@text_color_light:rgba(255,255,255,.6);
+@black_color_dark:rgba(0,0,0,9);
+@black_color:rgba(0,0,0,.6);
+@black_color_light:rgba(0,0,0,.3);
+@color_write:#fff;
+
+@top_height:0.7rem;//头部导航栏高度
+@top-height-px:70px\9;//头部导航栏高度
+
+//不换行超出为...
+.no-wrap(){
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.gradient(){
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#0A2239), to(#041228));
+  background: -webkit-linear-gradient(top, #0A2239,#081931, #041228);
+  background: -moz-linear-gradient(top, #0A2239,#081931, #041228);
+  background: -o-linear-gradient(top, #0A2239,#081931, #041228);
+  background: -ms-linear-gradient(top, #0A2239,#081931, #041228);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = #0A2239, endColorstr = #041228);
+}
+
+.black-gradient(){
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#434B52), to(#000000));
+  background: -webkit-linear-gradient(top, #434B52, #000000);
+  background: -moz-linear-gradient(top, #434B52, #000000);
+  background: -o-linear-gradient(top, #434B52, #000000);
+  background: -ms-linear-gradient(top, #434B52, #000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = #434B52, endColorstr = #000000);
+}
+
+//---------------媒体查询-开始---------------
+@media screen and(min-width:1680px)  {
+  html{
+    font-size: 22px;
+  }
+  .test{
+    color:red;
+  }
+
+}
+@media screen and(min-width:1440px) and (max-width:1680px) {
+  html{
+    font-size: 20px;
+  }
+  .test{
+    color: black;
+  }
+}
+@media screen and(min-width:1366px) and (max-width:1440px) {
+  html{
+    font-size: 18px;
+  }
+
+  .test{
+    color: yellow;
+  }
+}
+@media screen and(min-width:1280px) and (max-width:1366px) {
+  html{
+    font-size: 16px;
+  }
+  .test{
+    color: green;
+  }
+}
+@media screen and(min-width:768px) and (max-width:1024px) {
+  html{
+    font-size: 14px;
+  }
+  .test{
+    color: blue;
+  }
+}
+//---------------媒体查询-结束---------------
+
+//---------------基础颜色-开始---------------
+@base-white:RGB(255,255,255);
+//---------------基础颜色-结束---------------
+
+//---------------背景色-开始---------------
+@bg-blue:RGB(227,240,255);// #E3F0FF
+//---------------背景色-结束---------------
+
+//---------------字体色-开始---------------
+@font-color-8:#333333;
+@font-color-6:#666666;
+@font-color-4:#999999;
+@font-color-2:#CCCCCC;
+//---------------字体色-结束---------------
+
+//---------------盒子阴影颜色-开始---------------
+//@box-shadow-color:RGB(119,190,255);
+@box-shadow-color-2:RGB(228,242,255);//#E4F2FF
+@box-shadow-color-4:RGB(201,229,255);//#C9E5FF
+//---------------盒子阴影颜色-结束---------------
+
+
+//---------------字体大小-开始---------------
+@font-size-1:0.26rem;
+@font-size-2:0.24rem;
+@font-size-3:0.22rem;
+@font-size-4:0.20rem;
+@font-size-5:0.18rem;
+@font-size-6:0.16rem;
+
+//用于IE8及以下,写在每个class最前面,后面的用不了就用前面的
+@font-size-px-1:26px;
+@font-size-px-2:1.5em;
+@font-size-px-3:22px;
+@font-size-px-4:1.25em;
+@font-size-px-5:18px;
+@font-size-px-6:1em;
+//---------------字体大小-结束---------------

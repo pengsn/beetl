@@ -1,0 +1,661 @@
+@import "../comm/variable";
+
+/*****************************头部导航栏轮播图*******************************/
+.nb-header-section{
+  .industry-top{
+    .banner {
+      height: 630px \9;
+      width: 100%;
+      //height: 100%;
+      height: 6.3rem;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide>a{
+      width: 100%;
+      height: 100%;
+
+      img{
+        height: 630px \9;
+        width: 100%;
+        height: 6.3rem;
+      }
+    }
+  }
+}
+
+/*****************************中间主体内容*******************************/
+#main{
+  background: @bg-blue;
+  width: 100%;
+  overflow: hidden;
+}
+
+.chapter{
+  margin: 40px auto\9;
+  margin: 0.4rem auto;
+}
+
+.chapter3{
+  margin-top: 30px \9;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+}
+
+//解决外边距溢出
+.fd-part::before {
+  display: table;
+  content: "";
+}
+
+.fd-part::after {
+  display: table;
+  content: "";
+}
+
+.fd-title {
+  h2 {
+    line-height: 90px\9;
+    padding-top: 15px\9;
+    color: @font-color-8;
+    text-align: center;
+    font-weight: 400;
+    line-height: 0.9rem;
+    padding-top: 0.15rem;
+    position: relative;
+    &.white-color {
+      color: #fff;
+    }
+
+    i {
+      width: 50px\9;
+      margin-left: -25px;
+      display: inline-block;
+      height: 5px;
+      width: 0.5rem;
+      margin-left: -.25rem;
+      background: RGB(16, 132, 250);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+    }
+  }
+}
+
+.fd-swiper{
+  width: 1000px;
+  margin: 0 auto;
+}
+  /*****************************解决方案*******************************/
+.fd-part1 {
+  .fd-box{
+    margin: 65px auto\9;
+    margin: 0.65rem auto;
+
+    ul.resolve-box{
+      overflow: hidden;
+
+      li{
+        width: 485px\9;
+        height: 485px\9;
+        margin-left: 25px\9;
+        float: left;
+        width: 4.85rem;
+        height: 4.85rem;
+        margin-left: 0.25rem;
+        overflow: hidden;
+
+        &:first-child{
+          margin-left: 0;
+        }
+
+        .left{
+          width: 50%;
+          height: 100%;
+          float: left;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          overflow: hidden;
+
+          /* 3D变形 */
+          //transform-style: preserve-3d;
+          //-webkit-perspective: 1000;
+          //-moz-perspective: 1000;
+          //-ms-perspective: 1000;
+          //perspective: 1000;
+
+          &:hover{
+            img{
+              transform: scale(1.2);
+            }
+
+            .text-wrapper{
+              display: none;
+            }
+
+            .desc{
+              display: block;
+            }
+          }
+
+          img{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 0;
+            transition: all 1s ease;
+            top: 0;
+            left: 0;
+          }
+
+          .desc{
+            display: none;
+            height: 100%;
+            width: 100%;
+            background:#3693F0;
+            z-index: 500;
+
+            h3{
+              color: #fff;
+              height: 80px;
+              line-height: 80px;
+              text-align: center;
+              font-size: 26px;
+            }
+
+            p{
+              font-size: @font-size-px-5 \9;
+              padding: 0 10px;
+              color:rgba(255,255,255,0.6);
+              font-size: @font-size-5;
+              text-indent: 40px;
+              letter-spacing:1px;
+              line-height: 30px;
+              height: 30px;
+            }
+          }
+
+          .text-wrapper{
+            height: 200px;
+            width: 200px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 200px;
+            z-index: 500;
+            cursor: pointer;
+            display: block;
+
+            p{
+              color: #fff;
+              font-size: @title_font_size_sm;
+              height: 200px;
+              line-height: 200px;
+              width: 100%;
+              text-align: center;
+              transition: 0.8s;
+
+            }
+          }
+        }
+
+        .right{
+          width: 50%;
+          height: 100%;
+          float: right;
+
+          .top,.bottom{
+            width: 100%;
+            height: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+
+            &:hover{
+              img{
+                transform: scale(0.8);
+              }
+
+              .text-wrapper{
+                display: none;
+              }
+
+              .desc{
+                display: block;
+              }
+            }
+
+            img{
+              width: 285px;
+              height: 285px;
+              position: absolute;
+              z-index: 0;
+              transition: all 1s ease;
+              top: 0;
+              left: 0;
+            }
+
+            .desc{
+              display: none;
+              height: 100%;
+              width: 100%;
+              background:#3693F0;
+              z-index: 500;
+
+              h3{
+                font-size: @font-size-px-3 \9;
+                color: #fff;
+                height: 80px;
+                line-height: 80px;
+                text-align: center;
+                font-size: @font-size-3;
+              }
+
+              p{
+                font-size: @font-size-px-5 \9;
+                padding: 0 10px;
+                color:rgba(255,255,255,0.6);
+                font-size: @font-size-5;
+                text-indent: 40px;
+                letter-spacing:1px;
+                line-height: 30px;
+                height: 30px;
+              }
+            }
+
+            .text-wrapper{
+              height: 180px;
+              width: 180px;
+              background: rgba(0,0,0,0.3);
+              border-radius: 200px;
+              z-index: 500;
+              cursor: pointer;
+              transition: all 1s ease;
+              display: block;
+
+              p{
+                color: #fff;
+                font-size: @title_font_size_sm;
+                height: 180px;
+                line-height: 180px;
+                width: 100%;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+  /*****************************应用案例*******************************/
+.fd-part2{
+  background: #fff;
+
+  .banner2 {
+    margin-top: 40px\9;
+    width: 100%;
+    overflow: hidden;
+    height: 330px;
+    margin-top: 0.4rem;
+
+    .swiper-wrapper{
+      .swiper-slide {
+        display: inline-block;
+        height: 330px;
+        width: 460px;
+        text-align: center;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0px 5px 15px 0px @font-color-6;
+        overflow: hidden;
+        background: @base-white;
+        //&:hover{
+        //  p{
+        //    opacity: 1;
+        //    transition: all .6s linear;
+        //    .title{
+        //      transform: translateY(0);
+        //      transition: all .6s linear;
+        //    }
+        //    .desc{
+        //      opacity: 0.8;
+        //      transition: all .6s linear;
+        //    }
+        //  }
+        //  h2{
+        //    opacity: 0;
+        //    transition: all .6s linear;
+        //  }
+        //}
+        a{
+          display: block;
+          height: 100%;
+          width: 100%;
+
+          img{
+            margin-top: -165px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+          }
+
+          h2{
+            font-size: 10px \9;
+            height: 40px \9;
+            line-height: 40px \9;
+            position: absolute;
+            bottom:0;
+            left: 0;
+            right: 0;
+            color: @font-color-4;
+            font-size: .1rem;
+            height: .4rem;
+            line-height: .4rem;
+          }
+        }
+      }
+    }
+  }
+}
+  /*****************************服务与支持*******************************/
+.fd-part4{
+  .fd-box{
+    ul.service-box{
+      text-align: center;
+
+      li{
+        width: 310px \9;
+        height: 380px \9;
+        margin-left: 20px \9;
+        display: inline-block;
+        width: 3.1rem;
+        height: 3.8rem;
+        border: 1px solid transparent;
+        box-shadow: 0px 5px 15px 0px @box-shadow-color-4;
+        border-radius: 5px;
+        background: @base-white;
+        margin-left: .2rem;
+
+        &:first-child{
+          margin-left: 0;
+        }
+
+        a{
+          display: block;
+
+          &:hover{
+            img{
+              //transform: scale(1.2);
+              //transition: all 1s ease-in-out;
+              animation: small 1s ease;
+            }
+          }
+
+          img{
+            width: 130px \9;
+            height: 130px \9;
+            margin: 90px 0 40px 0 \9;
+            width: 1.3rem;
+            height: 1.3rem;
+            margin-top: 0.9rem;
+            margin-bottom: 0.4rem;
+            cursor: pointer;
+
+          }
+
+          p{
+            font-size: @font-size-px-3 \9;
+            width: 100%;
+            font-size: @font-size-3;
+            color: @font-color-6;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+
+  /*****************************关于我们*******************************/
+.fd-part5{
+  background: #fff;
+
+  .fd-box{
+    margin: 25px auto;
+
+    ul.aboutUs-box{
+      overflow: hidden;
+      perspective: 1000;
+      -webkit-perspective: 1000;
+      perspective-origin: 50% 50%;
+      -webkit-perspective-origin: 50% 50%;
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+
+      li{
+        width: 463px \9;
+        height: 210px \9;
+        width: 4.63rem;
+        height: 2.10rem;
+        margin: 15px;
+        float: left;
+        //background: #007aff;
+        display: flex;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 6px 6px 10px #C4DDE9;
+        transition: all 1s linear;
+        cursor: pointer;
+
+        &:hover{
+          //transform: rotateY(360deg);
+        }
+
+        &.company{
+          background:transparent url("/resources/images/index/qyjs.png") center center no-repeat;
+          background-size: 570px 210px \9;
+          background-size: 5.70rem 2.10rem;
+        }
+
+        &.honorary{
+          background:transparent url("/resources/images/index/ryzz.png") center  center no-repeat;
+          background-size: 570px 210px \9;
+          background-size: 5.70rem 2.10rem;
+        }
+
+        &.contact{
+          background:transparent url("/resources/images/index/lxwm.png") center  center no-repeat;
+          background-size: 570px 210px \9;
+          background-size: 5.70rem 2.10rem;
+        }
+
+        &.join{
+          background:transparent url("/resources/images/index/jrwm.png") center  center no-repeat;
+          background-size: 570px 210px \9;
+          background-size: 5.70rem 2.10rem;
+        }
+
+        .content{
+          text-align: center;
+          color: #fff;
+          font-size: 34px;
+          font-weight: 400;
+          width: 100%;
+          height: 100%;
+
+          a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+          }
+
+          p{
+            margin: 12px auto;
+            font-size: 33px;
+            &:last-child{
+              opacity: 0.6;
+              font-size: 30px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+  /*****************************新闻动态*******************************/
+.fd-part3{
+  .fd-box{
+    .show{
+      display: block !important;
+    }
+    .hide{
+      display: none !important;
+    }
+    .tab-header{
+      width: 370px \9;
+      margin: 0 auto 15px auto \9;
+      text-align: center;
+      width: 3.7rem;
+      margin: 0 auto 0.15rem auto;
+      border-radius: 5px;
+
+      li{
+        width: 185px \9;
+        height: 45px \9;
+        line-height: 45px \9;
+        float: left;
+        font-size: @font-size-px-4;
+        width: 1.85rem;
+        height: 0.45rem;
+        line-height: 0.45rem;
+        background: @base-white;
+        div{
+          color: @font-color-4;
+          display: block;
+          cursor: pointer;
+          &.active{
+            background: RGB(21,135,251);
+            color: @base-white;
+          }
+        }
+      }
+    }
+
+    .news-box {
+      overflow: hidden;
+      margin: 0 auto;
+      .news {
+        height: 50px \9;
+        line-height: 50px \9;
+        height: 0.5rem;
+        line-height: 0.5rem;
+
+        &:hover{
+          opacity: 0.7;
+        }
+
+        h5 {
+          float:left;
+          vertical-align: middle;
+          display: inline-block;
+          max-width: 7.7rem;
+
+          i{
+            width: 5px \9;
+            height: 5px \9;
+            margin-right: 10px \9;
+            display: inline-block;
+            vertical-align: middle;
+            width: 0.05rem;
+            height: 0.05rem;
+            border-radius: 5px;
+            margin-right: 0.1rem;
+            background: RGB(30,136,245);
+          }
+
+          a{
+            color: @font-color-8;
+          }
+        }
+
+        .div-date{
+          font-size: @font-size-px-5 \9;
+          color: #666666;
+          font-size: @font-size-5;
+          float:right;
+        }
+      }
+    }
+  }
+}
+  /*****************************合作伙伴*******************************/
+.fd-part6{
+  background: #fff;
+
+  .banner6{
+    margin: 50px 0 \9;
+    margin: 0.5rem 0;
+
+    .swiper-slide{
+      height: 90px \9;
+      width: 176px \9;
+      height: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      display: inline-block\9;
+
+      img{
+        position: absolute;
+        top: 50%;
+        margin-top: -45px;
+      }
+    }
+  }
+}
+
+@keyframes small
+{
+  0% {transform: scale(1);}
+  50% {transform: scale(0.5);}
+  100% {transform: scale(1);}
+}
+
+@keyframes bigger
+{
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}

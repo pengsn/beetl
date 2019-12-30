@@ -1,0 +1,75 @@
+@media screen and (min-width: 1680px) {
+  html {
+    font-size: 22px;
+  }
+  .test {
+    color: red;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1680px) {
+  html {
+    font-size: 20px;
+  }
+  .test {
+    color: black;
+  }
+}
+@media screen and (min-width: 1366px) and (max-width: 1440px) {
+  html {
+    font-size: 18px;
+  }
+  .test {
+    color: yellow;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+  html {
+    font-size: 16px;
+  }
+  .test {
+    color: green;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .test {
+    color: blue;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "microsoft yahei" !important;
+  font-weight: 400;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px\9;
+  line-height: 1;
+  color: #333333;
+  font-size: 0.16rem;
+}
+li {
+  list-style: none;
+}
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+i {
+  font-style: normal;
+}
+img {
+  border: none;
+}
